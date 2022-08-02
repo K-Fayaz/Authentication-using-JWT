@@ -18,7 +18,7 @@ const userSchema = new Schema({
   },
   password:{
     type:String,
-    required:[true,"You alost forgot your password!"],
+    required:[true,"You almost forgot your password!"],
     minLength:[8,"password must contain atleast 8 charecters"],
   },
 });
