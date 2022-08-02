@@ -1,0 +1,15 @@
+<nav class="nav-container">
+   <h1><a href="/">Butter Fingers</a></h1>
+   <div class="links">
+     <ul>
+       <% if(!authUser){ %>
+         <li><a href="/create/account">Sign Up</a></li>
+         <li><a href="/login">Login</a></li>
+       <% } %>
+       <% if(authUser){ %>
+         <p><%= authUser %></p>
+         <li><a href="/logout">Logout</a></li>
+       <% } %>
+     </ul>
+   </div>
+</nav>

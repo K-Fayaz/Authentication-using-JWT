@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <!-- import Jquery -->
+
+  <!-- Your CSS files are here -->
+  <link rel="stylesheet" href="/CSS/index.css">
+  <link rel="stylesheet" href="/CSS/home.css">
+
+</head>
+<body>
+  <%- include("./partials/nav.ejs") %>
+  <main class="body-container">
+    <div class="image-container">
+      <svg viewBox="0 0 200 200" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#F1C21B" d="M56,-57.9C66.2,-45.8,63.7,-22.9,63.4,-0.3C63.2,22.4,65.2,44.8,55,59.7C44.8,74.6,22.4,81.9,4.6,77.3C-13.2,72.7,-26.4,56.2,-43,41.3C-59.6,26.4,-79.6,13.2,-83.2,-3.6C-86.8,-20.4,-74.1,-40.8,-57.4,-52.9C-40.8,-65,-20.4,-68.7,1.2,-69.9C22.9,-71.2,45.8,-70,56,-57.9Z" transform="translate(100 100)" />
+    </svg>
+    <img src="/Image/heather.png" alt="Ice cream">
+    </div>
+    <div class="text-container">
+      <svg viewBox="0 0 200 200" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0D4D75" d="M50.8,-68.8C65.1,-59.5,75.5,-43.7,79.8,-26.8C84.2,-9.9,82.4,8.2,73.9,20.8C65.4,33.5,50.2,40.8,36.7,49.6C23.3,58.3,11.6,68.6,0.6,67.8C-10.5,67,-21.1,55.3,-33.1,46C-45.1,36.8,-58.6,30.1,-65.6,18.9C-72.6,7.6,-73.1,-8.1,-66.7,-19.7C-60.3,-31.3,-46.9,-38.7,-34.6,-48.6C-22.3,-58.5,-11.2,-70.9,3.5,-75.8C18.3,-80.6,36.5,-78,50.8,-68.8Z" transform="translate(100 100)" />
+      </svg>
+      <h1>Get access to our secret Recipes!</h1>
+      <a href="/recipe">See Recipes</a>
+    </div>
+  </main>
+</body>
+</html>

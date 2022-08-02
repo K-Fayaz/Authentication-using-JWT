@@ -1,0 +1,103 @@
+body{
+  display: grid;
+  width: 99%;
+  height: 100vh;
+  place-items: center;
+}
+
+header{
+  width: 320px;
+  height: auto;
+  /* background: lightblue; */
+  padding: 10px;
+  border-radius:4px;
+  box-shadow: -3px -1px 12px -6px rgba(0,0,0,0.75);
+}
+
+header h3{
+  text-align : center;
+}
+
+header form{
+  width: 100%;
+}
+
+
+form div{
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+}
+
+form div p{
+  color: red;
+  position: relative;
+  top: 5px;
+  font-size: 12px;
+}
+
+form div input{
+  width: 100%;
+  font-size: 15px;
+  height: 50px;
+  padding: 5px 0;
+  border: 1px solid rgba(0,0,0,0.5);
+  transition: 100ms;
+  padding-left: 5px;
+}
+form div input:focus{
+  box-shadow: 1px 2px 20px -10px white inset;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 20px;
+  box-shadow: 1px 2px 5px -3px rgba(0,0,0,0.69);
+}
+
+.user::before{
+  content: "username";
+  display: block;
+  font-size: 12px;
+  padding: 0 10px;
+  background: white;
+  width: 50px;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+
+.email::before{
+  content: "email";
+  display: block;
+  font-size: 12px;
+  padding: 0 10px;
+  background: white;
+  width: 30px;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+
+.password::before{
+  content: "password";
+  display: block;
+  font-size: 12px;
+  padding: 0 10px;
+  background: white;
+  width: 50px;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+
+
+form div button{
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background: var(--main-color);
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}

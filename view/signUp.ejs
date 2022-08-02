@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>create account</title>
+  <!-- import Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <!-- Your CSS files are here -->
+  <link rel="stylesheet" href="/CSS/index.css">
+  <link rel="stylesheet" href="/CSS/login.css">
+
+  <!-- Your Javascriot files are here -->
+  <script src="/JS/signup.js" charset="utf-8" defer></script>
+</head>
+<body>
+  <header>
+    <h3>Create Account</h3>
+    <form id="form" class="form" action="/create/account" method="POST">
+      <div class="field-container user">
+        <input class="user" type="text" id="username" name="username" autocomplete="off" >
+        <p id="username-error"></p>
+      </div>
+      <div class="field-container email">
+        <input type="email" id="email" name="email" autocomplete="off" >
+        <p id="email-error"></p>
+      </div>
+      <div class="field-container password">
+        <input type="text" id="password" name="password" autocomplete="off" >
+        <p id="password-error"></p>
+      </div>
+      <div class="field-container">
+        <button id="sign-up-button">Create account</button>
+      </div>
+    </form>
+  </header>
+
+</body>
+</html>

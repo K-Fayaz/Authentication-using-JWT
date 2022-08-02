@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* imported fonts */
+
+/* define your css variables here */
+:root{
+  --main-color: rgba(13,77,117,1);
+}
+
+.nav-container{
+  width: 100%;
+  height: auto;
+  min-height: 70px;
+  /* background: lightgreen; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -3px -1px 12px -6px rgba(0,0,0,0.75);
+}
+.nav-container h1 a{
+  color: black;
+  text-decoration : none;
+  margin-left: 20px;
+}
+.nav-container div{
+  flex-basis: 20%;
+}
+.nav-container div ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-container div ul li{
+  list-style-type: none;
+}
+
+.nav-container div a{
+  text-decoration: none;
+  background: var(--main-color);
+  color: white;
+  padding: 7px 15px;
+  border-radius: 2px;
+}
